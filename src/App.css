@@ -1,0 +1,180 @@
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/riZrG8uVoQwwA7FbW78Yh4.jpg);
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(214, 219, 221);
+    padding: 30px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(236, 240, 41);
+    opacity: 0.9;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: hidden;
+}
+
+.card__title {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card__subtitle{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card__second-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second__list{
+    display: grid;
+    gap: 7px;
+
+}
+
+.second__span{
+    color: black;
+}
+
+.second__item{
+    opacity: 0.7;
+}
+
+.card__temperature{
+    grid-column: span 1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.card__btn{
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-left: auto;
+    padding: 10px;
+    background-color: rgb(80, 133, 194);
+    border: none;
+    border-radius: 50px;
+    color: black;
+    text-shadow: 1px 1 px 5px #0009 ;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 100ms ease;
+    margin-bottom: 10px;
+}
+
+.card__btn{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    transition: transform 100ms ease;
+}
+
+/*Animacion*/
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
